@@ -27,6 +27,7 @@
                             <a href="{{route('movie.show', $cast['id'])}}">
                                 <img src="{{'https://image.tmdb.org/t/p/w500/'.$cast['poster_path']}}" alt="" class="hover:opacity-50 transition ease-in-out duration-150 rounded-lg">
                             </a>
+                            <a href="{{route('movie.show', $cast['id'])}}" class="text-lg text-white hover:underline">{{$cast['original_title']}}</a>
 
                     </div>
                     @endif
@@ -35,6 +36,7 @@
             </div>
         </div>
     </div>
+</div>
 
 </div>
 @endsection
